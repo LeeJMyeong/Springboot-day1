@@ -1,4 +1,4 @@
-package com.example.demo.mamber;
+package com.example.demo.member;
 
 import com.example.demo.store.Store;
 import lombok.AllArgsConstructor;

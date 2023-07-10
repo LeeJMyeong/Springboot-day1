@@ -1,9 +1,8 @@
 package com.example.demo.store;
 
 import com.example.demo.hobby.Hobby;
-import com.example.demo.mamber.Member;
+import com.example.demo.member.Member;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
