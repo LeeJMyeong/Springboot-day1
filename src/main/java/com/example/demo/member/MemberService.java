@@ -7,7 +7,7 @@ import java.util.List;
 public class MemberService {
     private static final List<Member> members = new ArrayList<>();
     public List<Member> findAll(){
-        return members;
+        return Store.members;
     }
     public Member findById(Integer id) {
         for (int i = 0; i < Store.members.size(); i++) {
@@ -18,7 +18,7 @@ public class MemberService {
         return null;
     }
     public void save(Member member) {
-        members.add(member);
+        Store.members.add(member);
     }
     public void delete(Integer id) {
         Store.members.remove(findById(id));

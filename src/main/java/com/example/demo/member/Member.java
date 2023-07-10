@@ -12,7 +12,7 @@ public class Member {
     private Integer age;
 
     public Member(String name, Integer age){
-        this.id = Store.members.size();
+        this.id = Store.memberIndex++;
         this.name = name;
         this.age = age;
     }
