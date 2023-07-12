@@ -31,4 +31,10 @@ public class MemberController {
                          @RequestBody MemberRequest memberRequest){
         return memberService.update(id, memberRequest);
     }
+    @GetMapping("/members/{userId}")
+    public MemberResponse getMember(@PathVariable("userId") Integer userId) {
+        Member member = memberService.findById(userId);
+        return new MemberResponse(member.getId(), member.getName(), member.getAge(), member.getHobbies());
+    }
+
 }
